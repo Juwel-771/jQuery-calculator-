@@ -17,45 +17,48 @@
         <div class="calc-body">
 
             <div>
-                <input type="button" value="C" class="btn">
+                <input type="button" value="C" class="btn" onclick="clearAll()">
                 <input type="button" value="+/-" class="btn">
                 <input type="button" value="%" class="btn">
-                <input type="button" value="/" class="btn side-btn">
+                <input type="button" value="/" class="btn side-btn" onclick="enterNumber('/')">
             </div>
 
             
             <div>
-                <input type="button" value="7" class="btn">
-                <input type="button" value="8" class="btn">
-                <input type="button" value="9" class="btn">
-                <input type="button" value="X" class="btn side-btn">
+                <input type="button" value="7" class="btn" onclick="enterNumber(7)">
+                <input type="button" value="8" class="btn" onclick="enterNumber(8)">
+                <input type="button" value="9" class="btn" onclick="enterNumber(9)">
+                <input type="button" value="X" class="btn side-btn" onclick="enterNumber('x')">
             </div>
 
             
             <div>
-                <input type="button" value="4" class="btn">
-                <input type="button" value="5" class="btn">
-                <input type="button" value="6" class="btn">
-                <input type="button" value="-" class="btn side-btn">
+                <input type="button" value="4" class="btn" onclick="enterNumber(4)">
+                <input type="button" value="5" class="btn" onclick="enterNumber(5)">
+                <input type="button" value="6" class="btn" onclick="enterNumber(6)">
+                <input type="button" value="-" class="btn side-btn" onclick="enterNumber('-')">
             </div>  
            
 
             
             <div>
-                <input type="button" value="3" class="btn">
-                <input type="button" value="2" class="btn">
-                <input type="button" value="1" class="btn">
-                <input type="button" value="+" class="btn side-btn">
+                <input type="button" value="3" class="btn" onclick="enterNumber(3)">
+                <input type="button" value="2" class="btn" onclick="enterNumber(2)">
+                <input type="button" value="1" class="btn" onclick="enterNumber(1)">
+                <input type="button" value="+" class="btn side-btn" onclick="enterNumber('+')">
             </div>
 
             <div>
-                <input type="button" value="0" class="btn">
-                <input type="button" value="." class="btn">
-                <input type="button" value="DEL" class="btn">
-                <input type="button" value="=" class="btn" style="background-color: orange;">
+                <input type="button" value="0" class="btn" onclick="enterNumber(0)">
+                <input type="button" value="." class="btn" onclick="enterNumber('.')">
+                <input type="button" value="DEL" class="btn" onclick="deleteNumbers()">
+                <input type="button" value="=" class="btn" style="background-color: orange;" onclick="calculate()">
             </div>
 
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="calculator.js"></script>
 </body>
 </html>
